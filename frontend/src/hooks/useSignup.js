@@ -8,16 +8,22 @@ const useSignup = () => {
    const success = handleInputErrors({fullName,username,password,confirmPassword,gender})
    if(!success) return;
 
+   setLoading(true)
+
   try {
-    const res = await fetch("http://localhost:5000/api/auth/signup", {
+    const res = await fetch("/api/auth/signup", {
       method:'POST',
       headers: {"Content-Type" : "application/json"},
       body: JSON.stringify({ fullName,username,password,confirmPassword,gender })
     })
 
     const data = await res.json()
-    console.log(data)
+    
+    if(data.error) {
+      throw new Error(data.error)
+    }
 
+    //localstorage 
 
   } catch (error) {
     toast.error(error.message)
