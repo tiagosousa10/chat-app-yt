@@ -5,7 +5,6 @@ import MessageSkeleton from '../skeletons/MessageSkeletons'
 
 const Messages = () => {
   const {messages, loading} = useGetMessages()
-  console.log("messages: ",messages)
 
   return (
 		<div className='px-4 flex-1 overflow-auto'>
