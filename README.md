@@ -2,6 +2,19 @@
 
 A modern, full-stack real-time chat application built with React and Node.js. This application enables users to register, login, search for other users, and exchange real-time messages in a beautiful, responsive interface.
 
+## 📸 Screenshots
+
+### Login Page
+![Login Page](./docs/images/login.png)
+
+### Sign Up Page
+![Sign Up Page](./docs/images/signup.png)
+
+### Chat Interface
+![Chat Interface 1](./docs/images/chat1.png)
+
+![Chat Interface 2](./docs/images/chat2.png)
+
 ## 🚀 Features
 
 - **User Authentication**: Secure registration and login system with JWT tokens
