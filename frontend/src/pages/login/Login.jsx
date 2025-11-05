@@ -73,7 +73,7 @@ const Login = () => {
                   className="block mb-2 font-medium"
                   style={{ color: "#3d4a55" }}
                 >
-                  Email
+                  Username
                 </label>
                 <input
                   type="text"
@@ -239,7 +239,8 @@ const Login = () => {
               {/* Footer Links */}
               <div className="flex items-center justify-end gap-2 text-xs pt-4">
                 <Link
-                  to="/terms"
+                  to="/#"
+                  target="_blank"
                   className="hover:underline"
                   style={{ color: "#3d4a55" }}
                 >
@@ -247,7 +248,8 @@ const Login = () => {
                 </Link>
                 <span style={{ color: "#3d4a55" }}>•</span>
                 <Link
-                  to="/privacy"
+                  to="/#"
+                  target="_blank"
                   className="hover:underline"
                   style={{ color: "#3d4a55" }}
                 >
